@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadi Al-Khaledi · Career Plan</title>
+<style>
+:root{
+  --bg:#f4f6f8; --bg-card:#ffffff; --bg-soft:#eef1f5;
+  --ink:#1c2230; --ink-soft:#5b6472; --ink-faint:#8b93a3;
+  --line:#e4e8ee; --line-soft:#edf0f4;
+  --accent:#33608f; --accent-dark:#244a70; --accent-soft:#eaf1f8;
+  --accent-2:#0f766e; --accent-2-soft:#d9f2ee;
+  --amber:#b45309; --amber-soft:#fbeedd;
+  --radius:16px; --radius-sm:10px;
+  --shadow:0 2px 4px rgba(20,30,45,.04),0 14px 32px rgba(20,30,45,.07);
+  --shadow-sm:0 1px 2px rgba(20,30,45,.05),0 4px 10px rgba(20,30,45,.04);
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Inter",Roboto,Helvetica,Arial,sans-serif;
+  --maxw:920px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+a{color:var(--accent-dark);text-decoration:none;border-bottom:1px solid var(--accent-soft);}
+a:hover{border-bottom-color:var(--accent);}
+h1,h2,h3,h4{font-weight:700;letter-spacing:-.01em;line-height:1.25;color:var(--ink);margin:0 0 .5em;}
+h1{font-size:2.3rem;} h2{font-size:1.55rem;} h3{font-size:1.12rem;} h4{font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-faint);}
+p{margin:0 0 1em;} p.lead{font-size:1.13rem;color:var(--ink-soft);}
+ul,ol{margin:0 0 1em;padding-left:20px;} li{margin-bottom:7px;}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+.hairline{height:3px;width:100%;background:linear-gradient(90deg,var(--accent) 0%,var(--accent-2) 50%,transparent 90%);}
+.site-nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.nav-inner{max-width:var(--maxw);margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.nav-logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:.98rem;color:var(--ink);border-bottom:none;white-space:nowrap;}
+.nav-logo .mark{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;}
+.nav-links{display:flex;align-items:center;gap:20px;font-size:.9rem;}
+.nav-links a{color:var(--ink-soft);border-bottom:2px solid transparent;padding:4px 0;font-weight:500;white-space:nowrap;}
+.nav-links a:hover{color:var(--accent-dark);border-bottom:2px solid var(--accent);}
+@media(max-width:720px){.nav-links{display:none;}}
+.hero{padding:52px 0 22px;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-dark);background:var(--accent-soft);padding:5px 12px;border-radius:999px;font-weight:700;margin-bottom:18px;}
+.hero h1{max-width:20ch;} .hero p.lead{max-width:60ch;}
+section{padding:28px 0;border-top:1px solid var(--line-soft);}
+.section-title{margin-bottom:18px;} .section-title .eyebrow{margin-bottom:10px;} .section-title p{color:var(--ink-soft);max-width:64ch;}
+.grid{display:grid;gap:18px;} .grid-2{grid-template-columns:repeat(2,1fr);}
+@media(max-width:720px){.grid-2{grid-template-columns:1fr;}}
+.card{background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-sm);}
+.card h3{margin-bottom:8px;} .card p{color:var(--ink-soft);margin-bottom:0;font-size:.96rem;}
+.card.part{border-top:3px solid var(--accent);}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.02em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:var(--bg-soft);color:var(--ink-soft);margin:0 6px 6px 0;}
+.tag.accent{background:var(--accent-soft);color:var(--accent-dark);}
+.tag.teal{background:var(--accent-2-soft);color:var(--accent-2);}
+.callout{border-radius:var(--radius);padding:18px 22px;margin:20px 0;border:1px solid var(--line);background:var(--bg-card);box-shadow:var(--shadow-sm);}
+.callout-label{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;display:block;}
+.callout p:last-child{margin-bottom:0;}
+.callout.why{background:var(--accent-soft);border-color:#cfe0f1;} .callout.why .callout-label{color:var(--accent-dark);}
+.callout.note{background:var(--bg-soft);border-color:var(--line);} .callout.note .callout-label{color:var(--ink-soft);}
+.callout.cta{background:var(--accent-2-soft);border-color:#bfe6df;} .callout.cta .callout-label{color:var(--accent-2);}
+.table-wrap{overflow-x:auto;margin:16px 0;border-radius:var(--radius);box-shadow:var(--shadow-sm);}
+table{width:100%;border-collapse:collapse;font-size:.92rem;background:var(--bg-card);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);}
+thead th{text-align:left;background:var(--bg-soft);color:var(--ink-soft);font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;font-weight:800;padding:11px 16px;border-bottom:1px solid var(--line);}
+tbody td{padding:11px 16px;border-bottom:1px solid var(--line-soft);vertical-align:top;}
+tbody tr:last-child td{border-bottom:none;} tbody td:first-child{font-weight:700;}
+.steps{list-style:none;margin:0;padding:0;counter-reset:step;}
+.steps li{position:relative;padding:4px 0 18px 44px;margin:0;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:2px;width:28px;height:28px;border-radius:50%;background:var(--accent-soft);color:var(--accent-dark);font-weight:800;font-size:.85rem;display:flex;align-items:center;justify-content:center;}
+.steps li strong{display:block;margin-bottom:2px;} .steps li p{color:var(--ink-soft);margin:2px 0 0;font-size:.95rem;}
+.qlist{list-style:none;padding:0;margin:0;}
+.qlist li{padding:0;margin-bottom:8px;}
+.qlist a{display:block;background:var(--bg-card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 16px;font-weight:600;color:var(--ink);box-shadow:var(--shadow-sm);}
+.qlist a:hover{border-color:var(--accent);color:var(--accent-dark);}
+.qlist .n{color:var(--accent-dark);font-weight:800;margin-right:8px;}
+footer.site-footer{border-top:1px solid var(--line);margin-top:36px;padding:26px 0 56px;color:var(--ink-faint);font-size:.86rem;}
+footer.site-footer .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+.muted{color:var(--ink-soft);} .small{font-size:.88rem;}
+.reveal{opacity:0;transform:translateY(12px);animation:fadeInUp .55s ease forwards;}
+@keyframes fadeInUp{to{opacity:1;transform:translateY(0);}}
+@media(prefers-reduced-motion:reduce){.reveal{animation:none;opacity:1;transform:none;}html{scroll-behavior:auto;}}
+</style>
+</head>
+<body>
+<div class="hairline"></div>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo"><span class="mark">SA</span> Shadi Al-Khaledi <span class="muted" style="font-weight:500;">· Career Plan</span></a>
+    <div class="nav-links">
+      <a href="#recap">Recap</a>
+      <a href="#registration">Registration</a>
+      <a href="#role">The role</a>
+      <a href="#need">What I'd need</a>
+      <a href="#transition">Transition</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container">
+    <span class="eyebrow">For John and Matt · July 2026</span>
+    <h1>Following our conversation.</h1>
+    <p class="lead">A short recap of what we discussed, and how I've thought it through, organized so it's easy to go through together.</p>
+  </div>
+</header>
+
+<section id="recap">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">Where this started</span>
+      <h2>A quick recap.</h2>
+    </div>
+    <ul>
+      <li>The <strong>BIM Coordinator role</strong>, and its limits on career progression and compensation.</li>
+      <li>The goal we discussed: <strong>BIM coordination and project coordination, from an architect's point of view.</strong></li>
+      <li>Your ask: that I help shape the role.</li>
+    </ul>
+    <p class="muted small" style="margin-top:14px;">The main questions to answer:</p>
+    <ul class="qlist">
+      <li><a href="#registration"><span class="n">1</span> Where does my registration stand?</a></li>
+      <li><a href="#role"><span class="n">2</span> What's the role, and why an architect?</a></li>
+      <li><a href="#need"><span class="n">3</span> What would I need to do it well?</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="registration">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">1 · Registration</span>
+      <h2>Where does my registration stand?</h2>
+      <p>My situation is specific: I hold a pre-professional Bachelor of Architecture rather than a NAAB-accredited professional degree, and I'm based in Alberta. The most direct route to registration is to license through the US first, then bring the licence home. That makes it a two-part process, and the two parts run in parallel.</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="card part">
+        <div style="margin-bottom:8px;"><span class="tag accent">Part 1 · Register in Washington</span></div>
+        <p>Through NCARB. I already have the experience hours required; the remaining step is passing the ARE exams.</p>
+      </div>
+      <div class="card part">
+        <div style="margin-bottom:8px;"><span class="tag teal">Part 2 · NCARB Certificate</span></div>
+        <p>The credential that lets me bring the licence to Alberta. Because my degree is a pre-professional BA, it runs through NCARB's Education Alternative, which requires <strong>double the hours in each of the six experience areas</strong> (7,480 total).</p>
+      </div>
+    </div>
+    <div class="callout why">
+      <span class="callout-label">The key point</span>
+      <p>These run together. <strong>While I study for and pass my exams, I'm banking the hours that satisfy Part 2.</strong> The same work moves both forward.</p>
+    </div>
+    <div class="callout note">
+      <span class="callout-label">John's question: do the hours need to be earned in Alberta?</span>
+      <p>No. The <a href="https://www.ncarb.org/press/updated-architecture-reciprocity-agreement-signed-canada-and-the-us" target="_blank" rel="noopener">updated US-Canada reciprocity agreement</a> (effective January 2026) removed the residency and place-of-practice requirements, so hours earned in the US transfer. (Worth confirming the detail directly with AAA, but that is the current rule.)</p>
+    </div>
+
+    <h3 style="margin-top:24px;">Recent NCARB changes work in my favour</h3>
+    <ul>
+      <li><strong>January 2026:</strong> the US-Canada agreement removed the old residency and hours barriers, now accepts my Education Alternative route, and made the Alberta move more direct.</li>
+      <li><strong>November 2025:</strong> AXP reporting updated, so older experience still counts (75%, no age cap). Nothing I've already logged is lost.</li>
+    </ul>
+
+    <h3 style="margin-top:24px;">Where I stand, and what's left</h3>
+    <p>All six areas are complete at the standard bar (6,815 hours against the 3,740 required). Against the doubled Part 2 bar, I'm at target in three areas. About <strong>1,200 hours remain, almost entirely in the two front-of-project areas</strong>:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>AXP experience area</th><th>Logged</th><th>2× target</th><th>Still needed</th></tr></thead>
+        <tbody>
+          <tr><td>Practice Management</td><td>333.5</td><td>320</td><td>✓ complete</td></tr>
+          <tr><td>Project Management</td><td>683</td><td>720</td><td>37</td></tr>
+          <tr><td>Programming &amp; Analysis</td><td>266</td><td>520</td><td>254</td></tr>
+          <tr><td>Project Planning &amp; Design</td><td>1,184.5</td><td>2,160</td><td>975</td></tr>
+          <tr><td>Project Development &amp; Documentation</td><td>3,328</td><td>3,040</td><td>✓ complete</td></tr>
+          <tr><td>Construction &amp; Evaluation</td><td>1,020.5</td><td>720</td><td>✓ complete</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <div style="margin-bottom:8px;"><span class="tag accent">Programming &amp; Analysis</span> <span class="muted small">· 254 left</span></div>
+        <p>NCARB's pre-design phase: assessing existing site and building conditions, determining the codes and approvals that apply, and turning client requirements into a project program. This is the existing-conditions and criteria work on the Centralized redesign.</p>
+      </div>
+      <div class="card">
+        <div style="margin-bottom:8px;"><span class="tag teal">Project Planning &amp; Design</span> <span class="muted small">· 975 left</span></div>
+        <p>NCARB's schematic design phase: laying out the design, applying codes, materials, and constructability to meet the program, and coordinating schematics with consultants. This is design-phase work such as the Centralized Phase 02 redesign.</p>
+      </div>
+    </div>
+    <div class="callout why">
+      <span class="callout-label">Why this connects to the role</span>
+      <p>Routing me into that design and pre-design work closes my licence relocation, and it is work the projects need done anyway. My licence and the firm's needs are the same request.</p>
+    </div>
+  </div>
+</section>
+
+<section id="role">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">2 · The role</span>
+      <h2>What's the role, and why an architect?</h2>
+    </div>
+    <p><strong>BIM coordination and project coordination, carried from an architect's point of view.</strong> Why an architect: it's who I am, it's the track I'm on through registration, and it fits the career path the work leads to.</p>
+    <h4 style="margin-top:18px;">What I already do</h4>
+    <ul>
+      <li>Implemented Revizto efficiently on the aviation work and pushed its adoption forward (building on what the DT team introduced), and presented on it at our BIM Café.</li>
+      <li>Run the coordination tracking across the work.</li>
+      <li>Provide the BIM coordination on the Concourse B packages, and hold the model and coordination standard on Centralized / PBS.</li>
+    </ul>
+    <h3 style="margin-top:22px;">A consistent BIM foundation for the aviation team</h3>
+    <p>As the team grows, someone has to own the standard across every project, not one model at a time:</p>
+    <ul>
+      <li>Consistent Revit setups and the right shared families across projects, instead of per-project shortcuts that cost more downstream.</li>
+      <li>Clean models coordinated with consultants: BIM Execution Plans, clash detection, the full discipline of it.</li>
+      <li>People mentored into that standard, so quality isn't dependent on any one person.</li>
+    </ul>
+    <p>I already do this across the Concourse B packages and Centralized / PBS. I want to own it across the aviation work.</p>
+  </div>
+</section>
+
+<section id="need">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">3 · What I'd need</span>
+      <h2>What would I need to do it well?</h2>
+      <p>Three things, none of them a big lift.</p>
+    </div>
+    <ol class="steps">
+      <li><strong>One person to bring up on Centralized.</strong><p>I'm currently the only one modeling it, a single point of failure. The right fit is a strong technologist who'd first learn the project and design history, the model and file setup, and the construction-phase change process, onboarded by shadowing and then a defined mini-scope under my review. Training them, with me guiding, de-risks the project and lets me lead and mentor instead of producing everything myself.</p></li>
+      <li><strong>A plan to get me the hours I still need.</strong><p>Some protected time and deliberate assignment to the two areas where my remaining NCARB hours live: Programming &amp; Analysis and Project Planning &amp; Design (design-phase and pre-design work). That way my licence relocation and the projects' needs move together. Exam study I'll do on my own time.</p></li>
+      <li><strong>A true picture of the load.</strong><p>I'll start logging overtime so the real capacity of the work is visible. Not to change deadlines, just so the load is understood and resourced rather than absorbed silently.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="transition">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">How this transitions</span>
+      <h2>Protect delivery first, then shift.</h2>
+    </div>
+    <h4>Right now</h4>
+    <p>I've completed the BIM Coordinator training with DT. Concourse B is in its closeout stretch: TP5 submits on July 24, with more packages closing out toward year-end (millwork packages, additional design changes, addendums and IFC, and CAD exports). I stay hands-on here to protect these deadlines.</p>
+    <h4 style="margin-top:18px;">Beyond Concourse B</h4>
+    <p>As Concourse B winds down, my tasks and work plan should shift toward BIM-related tasks and project coordination across the aviation program, anchored on Centralized / PBS. That's the natural window to bring one person up on Centralized and to route me into the design-phase work that also completes my registration hours. I'd like us to define that work plan together, rather than defaulting back into production.</p>
+    <h4 style="margin-top:18px;">Title and role</h4>
+    <p>The title "Architect" is reserved for registered architects, so that title follows the licence. In the meantime, I'd like us to agree a role and title that reflect where this is heading, <strong>coordination from an architect's perspective rather than a BIM Coordinator role</strong>, with a defined plan for it to progress toward a registered architectural position as I complete the exams and registration. I'd rather have a defined path than an open-ended one.</p>
+  </div>
+</section>
+
+<section id="conferences">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">Also</span>
+      <h2>Professional development.</h2>
+    </div>
+    <p>I'm attending Autodesk University this year, which the firm is generously supporting, and I'd like to present what I learn back to the studio. Going forward, and if possible, I'd like to attend one industry conference a year as ongoing professional development, to keep growing and to see where the industry is heading, then bring that back to the team.</p>
+    <p class="small muted">One example of the kind of thing worth bringing back is a talk I mentioned, on BIG's approach to AI in practice: <a href="https://www.youtube.com/watch?v=tgO7k72g5ag" target="_blank" rel="noopener">watch it here</a>.</p>
+  </div>
+</section>
+
+<section id="scope">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">For reference</span>
+      <h2>The work I carry.</h2>
+      <p>The scope behind all of this: two programs, each with several projects and phases at different stages.</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <div style="margin-bottom:12px;"><span class="tag accent">Centralized / PBS program</span></div>
+        <ul style="margin:0;padding-left:18px;color:var(--ink-soft);font-size:.92rem;line-height:1.75;">
+          <li>Centralized Screening Phase 02 (design updates and construction support, in CA)</li>
+          <li>Centralized Screening Phase 03 (construction support, in CA)</li>
+          <li>CAD exports / phased delivery support</li>
+          <li>Fire Protection Upgrade (IFC and CAD exports complete)</li>
+          <li>Non-Passenger Screening, Concourse C (CA support)</li>
+          <li>Ceiling Hall Replacement (in construction)</li>
+          <li>PBS A / Concourse A (IFT complete)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div style="margin-bottom:12px;"><span class="tag teal">Concourse B program</span></div>
+        <ul style="margin:0;padding-left:18px;color:var(--ink-soft);font-size:.92rem;line-height:1.75;">
+          <li>TP4.2, Arrivals + Penthouse (4 addendums complete, 5th upcoming)</li>
+          <li>TP4.3, Building Envelope (BIM support, Addendum 1)</li>
+          <li>TP5, Departures with Haptic + K-Studio (CA drawings, upcoming phases through summer)</li>
+          <li>TP6, Tenant Fitout 6.1 &amp; 6.2 (BIM and coordination)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout cta" style="margin-top:26px;">
+      <span class="callout-label">Next step</span>
+      <p>Could we book a short meeting, 30 minutes, to go through this together? I'd rather talk it through than leave it on a page.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>Career Plan</span>
+    <span>Shadi Al-Khaledi · July 2026</span>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.card,.callout,.table-wrap').forEach(function(el,i){
+    el.classList.add('reveal');el.style.animationDelay=(Math.min(i,8)*0.05)+'s';
+  });
+});
+</script>
+</body>
+</html>
